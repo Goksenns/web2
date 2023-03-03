@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Orbitron:wght@500&family=Roboto+Slab&family=Source+Sans+Pro&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Libre Baskerville', serif;
+            font-family: 'Orbitron', sans-serif;
+            font-family: 'Roboto Slab', serif;
+            font-family: 'Source Sans Pro', sans-serif;
+            font-family: 'Space Mono', monospace;
+        }
+
+        #showcase {
+            background-image: url("https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+            background-position: center;
+            height: 500px;
+            width: 100%;
+            padding: 10px;
+        }
+
+        #showcase-title {
+            color: #fff;
+        }
+
+        .main-header {
+            background-color: #d4ada1;
+            padding: 15px 5px;
+        }
+
+        .main-nav {
+            display: inline-block;
+            width: calc(100% - 130px);
+            text-align: right;
+
+        }
+
+        .main-nav_items {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .main-nav_item {
+            display: inline-block;
+            margin: 0 8px;
+
+        }
+
+        .main-header__logo {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 21px;
+
+        }
+
+        .main-nav_item a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .main-nav_item a:hover,
+        .main-nav_item:hover::before {
+            color: #2e4c6d;
+        }
+
+        .main-nav_item a:active,
+        .main-nav_item:active::before {
+            color: #fff;
+        }
+
+        .main-nav_item::before {
+            content: '\2022';
+            color: #fff
+        }
+
+        .main-nav_item--login a {
+            color: #fff;
+            background-color: #2e4c6d;
+            padding: 4px 16px;
+            border-radius: 8px;
+            border: 2px solid #fff;
+        }
+
+        .main-nav_item--login::before {
+            content: none;
+
+        }
+
+        .main-nav_item--login a:hover {
+            color: #2e4c6d;
+            border: 2px solid #2e4c6d;
+            background-color: #fff;
+        }
+
+        #how-it-works {
+            background-color: #fff;
+            padding: 8px 10px;
+            text-align: center;
+        }
+
+        #how-it-works h2 {
+            color: #3e4555;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+
+        .row {
+            margin-bottom: 40px;
+        }
+
+        .col {
+            display: inline-block;
+            width: 30%;
+            padding: 2px;
+            margin: 4px;
+        }
+
+        .icon-box h3 {
+            color: #3e4555;
+            font-size: 26px;
+        }
+
+        .icon-box span {
+            color: #3e4555;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <a href="#" class="main-header__logo">Movie App</a>
+        <nav class="main-nav">
+            <ul class="main-nav_items">
+                <li class="main-nav_item">
+                    <a href="#"> Filmler</a>
+
+                </li>
+                <li class="main-nav_item">
+                    <a href="#"> Diziler</a>
+
+                </li>
+                <li class="main-nav_item main-nav_item--login">
+                    <a href="#"> Login</a>
+
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="showcase">
+            <h1 id="showcase-title">Welcome to MovieApp</h1>
+        </section>
+        <section id="how-it-works">
+            <div class="how-it-works_header">
+                <div class="row">
+                    <h2>How it works?</h2>
+                    <p>We will show you step by step how to start watching your favorite movies & tv shows starting now?
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" icon-box col "><span class="material-symbols-outlined">
+                        logout
+                    </span>
+                    <h3>Register</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, incidunt.</p>
+                </div>
+                <div class="icon-box col"><span class="material-symbols-outlined">
+                        dynamic_feed
+                    </span>
+                    <h3>Choose a Plan</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, deserunt?</p>
+                </div>
+                <div class="icon-box col"><span class="material-symbols-outlined">
+                        sentiment_very_satisfied
+                    </span>
+                    <h3>Enjoy Movify</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, odio!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
