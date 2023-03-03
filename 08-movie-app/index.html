@@ -124,12 +124,21 @@
             margin-bottom: 40px;
         }
 
-        .col {
+        .col-3 {
             display: inline-block;
             width: 30%;
             padding: 2px;
             margin: 4px;
         }
+
+        .col-2 {
+            display: inline-block;
+            width:50%;
+            height: 350px;
+            background-color: #d4ada1;
+           
+        }
+
 
         .icon-box h3 {
             color: #3e4555;
@@ -139,6 +148,39 @@
         .icon-box span {
             color: #3e4555;
         }
+
+        .features_left {
+            background: url("https://i.pinimg.com/564x/56/95/e2/5695e2704e01a328a69bd00bcef83dc2.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .features_right{
+            background-color:#edf5f7;
+            vertical-align: top;
+            text-align: center;
+        }
+        .features_right h3{
+            font-size:30px;
+        }
+        #features a{
+            background-color: #d4ada1;
+            color: #fff;
+            padding:7px 15px;
+            text-decoration: none;
+            font-size: 14px;
+            text-align: center;
+            border: 1px solid #d4ada1;
+            border-radius: 3px;
+            display: inline-block;
+            margin: 15px;
+
+        }
+        #features a:hover{
+            border:1px solid #d4ada1;
+            color:#d4ada1;
+            background-color: #fff;
+        }
+        
     </style>
 </head>
 
@@ -176,19 +218,19 @@
                 </div>
             </div>
             <div class="row">
-                <div class=" icon-box col "><span class="material-symbols-outlined">
+                <div class=" icon-box col-3 "><span class="material-symbols-outlined">
                         logout
                     </span>
                     <h3>Register</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, incidunt.</p>
                 </div>
-                <div class="icon-box col"><span class="material-symbols-outlined">
+                <div class="icon-box col-3"><span class="material-symbols-outlined">
                         dynamic_feed
                     </span>
                     <h3>Choose a Plan</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, deserunt?</p>
                 </div>
-                <div class="icon-box col"><span class="material-symbols-outlined">
+                <div class="icon-box col-3"><span class="material-symbols-outlined">
                         sentiment_very_satisfied
                     </span>
                     <h3>Enjoy Movify</h3>
@@ -196,7 +238,23 @@
                 </div>
             </div>
         </section>
+        <section id="features">
+            <div class="row">
+                <div class="col-2 features_left"></div><div class="col-2 features_right">
+                    <h3>Watch all Movies & TV Shows once they get released!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nihil veritatis dicta?
+                        Molestias expedita quam at, culpa eveniet aut magni.</p>
+                    <a href="#">View Features</a>
+                </div>
+
+            </div>
+        </section>
     </main>
+
+
+
+
+
 </body>
 
 </html>
