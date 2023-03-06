@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="buttons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -30,6 +31,8 @@
             height: 500px;
             width: 100%;
             padding: 10px;
+           
+            
         }
 
         #showcase-title {
@@ -88,25 +91,14 @@
             color: #fff
         }
 
-        .main-nav_item--login a {
-            color: #fff;
-            background-color: #2e4c6d;
-            padding: 4px 16px;
-            border-radius: 8px;
-            border: 2px solid #fff;
-        }
+  
 
         .main-nav_item--login::before {
             content: none;
 
         }
 
-        .main-nav_item--login a:hover {
-            color: #2e4c6d;
-            border: 2px solid #2e4c6d;
-            background-color: #fff;
-        }
-
+     
         #how-it-works {
             background-color: #fff;
             padding: 8px 10px;
@@ -133,10 +125,10 @@
 
         .col-2 {
             display: inline-block;
-            width:50%;
+            width: 50%;
             height: 350px;
             background-color: #d4ada1;
-           
+
         }
 
 
@@ -154,33 +146,67 @@
             background-size: cover;
             background-position: center;
         }
-        .features_right{
-            background-color:#edf5f7;
+
+        .features_right {
+            background-color: #edf5f7;
             vertical-align: top;
             text-align: center;
         }
-        .features_right h3{
-            font-size:30px;
+
+        .features_right h3 {
+            font-size: 30px;
         }
-        #features a{
-            background-color: #d4ada1;
-            color: #fff;
-            padding:7px 15px;
-            text-decoration: none;
-            font-size: 14px;
+
+   
+        .section-title{
+            text-align:center;
+        }
+        .plan{
+            
             text-align: center;
-            border: 1px solid #d4ada1;
-            border-radius: 3px;
-            display: inline-block;
-            margin: 15px;
+           padding: 5px;
+            width: 29%;
+            float:right;
 
         }
-        #features a:hover{
-            border:1px solid #d4ada1;
-            color:#d4ada1;
-            background-color: #fff;
+        .inner-plan{
+            background-color: #edf5f7;
+            padding: 25px 10px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            transition: box-shadow .5s;
+
         }
-        
+        .inner-plan:hover{
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.60) 0px 6px 6px;
+        }
+        .plan__badge{
+            background-color: #fff;
+            color:#d4ada1;
+            padding: 8px;
+            border-radius: 5px;
+        }
+        .recommended_plan{
+            color:#fff;
+            background: #2e4c6d;
+        }
+        .plan_features{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .plan_features li{
+            margin:6px 0;
+        }
+        .clearfix::after{
+            content:"";
+            display:block ;
+            clear:both;
+        }
+        .container{
+            margin:0 auto;
+            width: 1000px;
+        }
     </style>
 </head>
 
@@ -198,7 +224,7 @@
 
                 </li>
                 <li class="main-nav_item main-nav_item--login">
-                    <a href="#"> Login</a>
+                    <a class=" btn btn-secondary" href="#"> Login</a>
 
                 </li>
             </ul>
@@ -244,10 +270,69 @@
                     <h3>Watch all Movies & TV Shows once they get released!</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nihil veritatis dicta?
                         Molestias expedita quam at, culpa eveniet aut magni.</p>
-                    <a href="#">View Features</a>
+                    <a class="btn btn-secondary" href="#">View Features</a>
                 </div>
 
             </div>
+        </section>
+        <section id="plans">
+            <div class="row">
+            <h2 class="section-title">Become a Premium Member</h2>
+        <div class=" container clearfix"> 
+            <div class="plan">
+                <div class="inner-plan">
+                <h2>Free</h2>
+                <h3>0/month</h3>
+                <ul class="plan_features">
+                    <li>HD available</li>
+                    <li>Unlimited Movies and TV shows</li>
+                    <li>Watch on yout phone & tablet</li>
+                    <li>Download and watch offline</li>
+                    <li>Screens you can watch</li>
+                    <li>First Month Free</li>
+                </ul>
+                <div>
+                    <button class="btn btn-primary">Choose Plan</button>
+                </div>
+            </div>
+            </div>
+            <div class="plan">
+                <div class="inner-plan recommended_plan">
+                    <h2 class="plan__badge">Recommended</h2>
+                <h2>Basic</h2>
+                <h3>$9.99/month</h3>
+                <ul class="plan_features">
+                    <li>HD available</li>
+                    <li>Unlimited Movies and TV shows</li>
+                    <li>Watch on yout phone & tablet</li>
+                    <li>Download and watch offline</li>
+                    <li>Screens you can watch</li>
+                    <li>First Month Free</li>
+                </ul>
+                <div>
+                    <button class="btn btn-primary">Choose Plan</button>
+                </div>
+            </div>
+            </div>
+            <div class="plan">
+                <div class="inner-plan">
+                <h2>Premium</h2>
+                <h3>$19.99/month</h3>
+                <ul class="plan_features">
+                    <li>HD available</li>
+                    <li>Unlimited Movies and TV shows</li>
+                    <li>Watch on yout phone & tablet</li>
+                    <li>Download and watch offline</li>
+                    <li>Screens you can watch</li>
+                    <li>First Month Free</li>
+                </ul>
+                <div>
+                    <button class="btn btn-primary">Choose Plan</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
         </section>
     </main>
 
