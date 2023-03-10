@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="buttons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,231 +18,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Document</title>
-    <style>
-        html{
-            scroll-behavior: smooth;
-        }
-        body {
-            margin: 0;
-            font-family: 'Libre Baskerville', serif;
-            font-family: 'Orbitron', sans-serif;
-            font-family: 'Roboto Slab', serif;
-            font-family: 'Source Sans Pro', sans-serif;
-            font-family: 'Space Mono', monospace;
-        }
-
-        #showcase {
-            background-image: url("https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
-            background-position: center;
-            height: 60vh;
-           opacity: 0.8;
-            padding: 10px;
-            position: relative;
-
-        }
-
-        #showcase-title {
-            color: #fff;
-            position: absolute;
-            top:50%;
-            margin:0;
-            left:50%;
-            transform: translate(-50%, -50%);
-            font-size: 40px;
-           
-        }
-
-        .main-header {
-            background-color: #d4ada1;
-            padding: 8px 16px;
-            position: fixed;
-            z-index: 1;
-            width: 100%;
-            
-        }
-
-        .main-nav {
-            display: inline-block;
-            width: calc(100% - 130px);
-            text-align: right;
-
-        }
-
-        .main-nav_items {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        .main-nav_item {
-            display: inline-block;
-            margin: 0 8px;
-
-        }
-
-        .main-header__logo {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 21px;
-
-        }
-
-        .main-nav_item a {
-            text-decoration: none;
-            color: #fff;
-        }
-
-        .main-nav_item a:hover,
-        .main-nav_item:hover::before {
-            color: #2e4c6d;
-        }
-
-        .main-nav_item a:active,
-        .main-nav_item:active::before {
-            color: #fff;
-        }
-
-        .main-nav_item::before {
-            content: '\2022';
-            color: #fff
-        }
-
-  
-
-        .main-nav_item--login::before {
-            content: none;
-
-        }
-
-     
-        #how-it-works {
-            background-color: #fff;
-            padding: 8px 10px;
-            text-align: center;
-        }
-
-        .row {
-            margin-bottom: 40px;
-        }
-
-        .col-3 {
-            display: inline-block;
-            width: 30%;
-            padding: 2px;
-            margin: 4px;
-        }
-
-        .col-2 {
-            display: inline-block;
-            width: 50%;
-            height: 350px;
-            background-color: #d4ada1;
-
-        }
-
-
-        .icon-box h3 {
-            color: #3e4555;
-            font-size: 26px;
-        }
-
-        .icon-box span {
-            color: #3e4555;
-        }
-
-        .features_left {
-            background: url("https://i.pinimg.com/564x/56/95/e2/5695e2704e01a328a69bd00bcef83dc2.jpg");
-            background-size: cover;
-            background-position: center;
-        }
-
-        .features_right {
-            background-color: #edf5f7;
-            vertical-align: top;
-            text-align: center;
-        }
-
-        .features_right h3 {
-            font-size: 30px;
-        }
-
-   
-        .section-title{
-            text-align:center;
-            margin-bottom: 40px;
-            color: #3e4555;
-            font-size: 30px;
-            font-weight: 600;
-        }
-        .plan{
-            
-            text-align: center;
-           padding: 5px;
-            width: 29%;
-            float:right;
-
-        }
-        .inner-plan{
-            background-color: #edf5f7;
-            padding: 25px 10px;
-            border-radius: 5px;
-            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-            transition: box-shadow .5s;
-
-        }
-        .inner-plan:hover{
-            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.60) 0px 6px 6px;
-        }
-        .plan__badge{
-            background-color: #fff;
-            color:#d4ada1;
-            padding: 8px;
-            border-radius: 5px;
-        }
-        .recommended_plan{
-            color:#fff;
-            background: #2e4c6d;
-        }
-        .plan_features{
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        .plan_features li{
-            margin:6px 0;
-        }
-        .plan--featured{
-            position: relative;
-            top:-20px;
-        }
-        .clearfix::after{
-            content:"";
-            display:block ;
-            clear:both;
-        }
-        .container{
-            margin:0 auto;
-            width: 1000px;
-        }
-        #backtotop{
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-        }
-        #backtotop i{
-            color:#d4ada1;
-            font-size: 45px;
-            transition: color .6s;
-        }
-        #backtotop i:hover{
-            color:#bf8573;
-        }
-    </style>
 </head>
 
 <body id="body">
     <header class="main-header">
+       <div class="container">
         <a href="#" class="main-header__logo">Movie App</a>
         <nav class="main-nav">
             <ul class="main-nav_items">
@@ -259,13 +40,18 @@
                 </li>
             </ul>
         </nav>
+    </div>
     </header>
 
     <main>
         <section id="showcase">
-            <h1 id="showcase-title">Welcome to MovieApp</h1>
+        div <div class="content">
+            <h2>Welcome</h2>
+            <h3>Millions of movies, TV shows and people to discover.Explore now.</h3>
+        </div>
         </section>
         <section id="how-it-works">
+            <div class="container">
             <div class="how-it-works_header">
                 <div class="row">
                     <h2 class="section-title">How it works?</h2>
@@ -306,10 +92,10 @@
             </div>
         </section>
         <section id="plans">
-            <div class="row">
             <h2 class="section-title">Become a Premium Member</h2>
-        <div class=" container clearfix"> 
-            <div class="plan">
+            <div class=" container"> 
+            <div class="row">
+             <div class="col-3 plan">
                 <div class="inner-plan">
                 <h2>Free</h2>
                 <h3>0/month</h3>
@@ -326,7 +112,7 @@
                 </div>
             </div>
             </div>
-            <div class="plan plan--featured">
+            <div class="col-3 plan plan--featured">
                 <div class="inner-plan recommended_plan">
                     <h2 class="plan__badge">Recommended</h2>
                 <h2>Basic</h2>
@@ -344,7 +130,7 @@
                 </div>
             </div>
             </div>
-            <div class="plan">
+            <div class=" col-3 plan">
                 <div class="inner-plan">
                 <h2>Premium</h2>
                 <h3>$19.99/month</h3>
@@ -361,7 +147,9 @@
                 </div>
             </div>
             </div>
+
         </div>
+    </div>
     </div>
         </section>
     </main>
