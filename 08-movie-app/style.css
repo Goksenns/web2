@@ -230,10 +230,24 @@ body {
     right: 10px;
 }
 #backtotop i{
-    color:#d4ada1;
+    color:#3e4555;
     font-size: 45px;
     transition: color .6s;
 }
 #backtotop i:hover{
-    color:#bf8573;
+    color: #3e4555;
+}
+.counter{
+    background: linear-gradient(to bottom, #d4ada1 0% , #bf8573 100%);
+    text-align: center;
+    padding: 50px;
+}
+.counter_-item{
+    font-size:30px;
+    font-weight: 500;
+    color:#fff;
+}
+.counter h4{
+    margin:0;
+    color:#fff;
 }
