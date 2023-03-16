@@ -1,3 +1,10 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Orbitron:wght@500&family=Roboto+Slab&family=Source+Sans+Pro&family=Space+Mono:wght@400;700&display=swap');
+@import url("buttons.css");
+
+*{
+    box-sizing:border-box;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -283,6 +290,9 @@ footer{
     background:#3e4555;
     padding: 30px;
     margin-top: 30px;
+
+    position:relative;
+    bottom: -200px;
 }
 footer a {
     color:#fff;
