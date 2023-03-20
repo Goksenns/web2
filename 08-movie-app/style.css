@@ -21,12 +21,11 @@ body {
     background: linear-gradient(to bottom, rgba(212, 173, 161, 0.4),rgba(191, 133, 115, 0.4)) ,url("https://media.istockphoto.com/id/1342504764/photo/female-eating-in-front-of-tv.jpg?b=1&s=170667a&w=0&k=20&c=i_8FAnA2uZs-BCgR9W9gFSacqcgBWX4Mko_oj13YaQQ=");
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    height: 80vh;
+    height: 40vh;
     width: 100%;
     opacity: 0.6;
     position: relative;
-
+    
 }
 #showcase .content{
     position: absolute;
@@ -40,6 +39,32 @@ body {
     width: 60%;
     border-radius: 10px;
 }
+#showcase h1{
+    position: absolute;
+    top: 50%;
+    margin:0;
+    color:#fff;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 576px){
+    #showcase{
+        height: 50vh;
+    }
+    }
+
+@media (min-width: 768px){
+#showcase{
+    height: 60vh;
+}
+}
+
+@media (min-width: 992px){
+    #showcase{
+        height: 70vh;
+    }
+    }
 
 #showcase-title {
     color: #fff;
@@ -187,7 +212,7 @@ body {
 .plan{
     
     text-align: center;
-   padding: 5px;
+    padding: 5px;
 }
 .inner-plan{
     background-color: #edf5f7;
@@ -228,8 +253,7 @@ body {
     clear:both;
 }
 .container{
-    margin:0 auto;
-    width: 1000px;
+ width: 100%;
 }
 #backtotop{
     position: fixed;
@@ -334,4 +358,33 @@ footer ul li{
 .fa-instagram{
     background-color: #125688;
     color:#fff
+}
+@media (min-width: 576px){
+    .container{
+       margin: 0 auto;
+       width: 540px;
+    }
+}
+@media (min-width: 768px){
+    .container{
+        margin: 0 auto;
+        width: 720px;
+     }
+}
+@media (min-width: 992px){
+    .container{
+        margin: 0 auto;
+        width: 960px;
+     }
+}
+@media (min-width: 1200px){  
+     .container{
+    margin: 0 auto;
+    width: 1140px;
+ }}
+@media (min-width: 1400px){
+    .container{
+        margin: 0 auto;
+        width: 1320px;
+     }
 }
