@@ -7,8 +7,11 @@
 }
 html{
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
+
 body {
+    font-size: 1.4rem;
     margin: 0;
     font-family: 'Libre Baskerville', serif;
     font-family: 'Orbitron', sans-serif;
@@ -33,11 +36,10 @@ body {
     left:50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    font-size: 20px;
     background: rgba(46, 76, 109, 0.3);
-    padding: 20px;
+    padding: 2rem;
     width: 60%;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 #showcase h1{
     position: absolute;
@@ -52,19 +54,20 @@ body {
     #showcase{
         height: 50vh;
     }
-    }
+}
 
 @media (min-width: 768px){
 #showcase{
     height: 60vh;
 }
+
 }
 
 @media (min-width: 992px){
     #showcase{
         height: 70vh;
     }
-    }
+}
 
 #showcase-title {
     color: #fff;
@@ -79,7 +82,7 @@ body {
 
 .main-header {
     background-color: #d4ada1;
-    padding: 8px 16px;
+    padding: 0.8rem 1.6rem;
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -88,7 +91,7 @@ body {
 
 .main-nav {
     display: inline-block;
-    width: calc(100% - 130px);
+    width: calc(100% - 10rem);
     text-align: right;
 
 }
@@ -101,7 +104,7 @@ body {
 
 .main-nav_item {
     display: inline-block;
-    margin: 0 8px;
+    margin: 0 1rem;
 
 }
 
@@ -109,7 +112,7 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 21px;
+    font-size: 20px;
 
 }
 
@@ -143,12 +146,12 @@ body {
 
 #how-it-works {
     background-color: #fff;
-    padding: 8px 10px;
+    padding:1rem;
     text-align: center;
 }
 
 .row {
-    margin-top: 40px;
+    margin-top: 4rem;
 }
 .row::after{
     content: "";
@@ -173,7 +176,7 @@ body {
 
 .icon-box h3 {
     color: #3e4555;
-    font-size: 26px;
+    font-size: 2.6rem;
 }
 
 .icon-box span {
@@ -190,24 +193,25 @@ body {
     background-color: #edf5f7;
     vertical-align: top;
     text-align: center;
+    padding: 3rem;
    
 }
 .features_left,
 .features_right{
-    height: 350px;
+    height: 35rem;
 }
 
 .features_right h3 {
-    font-size: 30px;
+    font-size: 3rem;
 }
 
 
 .section-title{
     text-align:center;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
     color: #3e4555;
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 3rem;
+    
 }
 .plan{
     
@@ -360,29 +364,44 @@ footer ul li{
     color:#fff
 }
 @media (min-width: 576px){
+    html{
+        font-size: 68%;
+    }
     .container{
        margin: 0 auto;
        width: 540px;
     }
 }
 @media (min-width: 768px){
+    html{
+        font-size: 72%;
+    }
     .container{
         margin: 0 auto;
         width: 720px;
      }
 }
 @media (min-width: 992px){
+    html{
+        font-size: 74%;
+    }
     .container{
         margin: 0 auto;
         width: 960px;
      }
 }
 @media (min-width: 1200px){  
+    html{
+        font-size: 78%;
+    }
      .container{
     margin: 0 auto;
     width: 1140px;
  }}
 @media (min-width: 1400px){
+    html{
+        font-size: 80%;
+    }
     .container{
         margin: 0 auto;
         width: 1320px;
