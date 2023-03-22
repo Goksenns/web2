@@ -1,5 +1,5 @@
 .signup-page{
-    padding-top: 20px;
+    padding-top: 40px;
 }
 .signup-title{
     padding-top: 60px;
@@ -8,8 +8,13 @@
     color:#2e4c6c;
 }
 .signup-form{
-    width: 500px;
-    margin:auto;
+ width: 100%;
+}
+@media (min-width:768px){
+    .signup-form{
+        width: 500px;
+        margin:auto;
+    }
 }
 .signup-form label,
 .signup-form input:not([type="checkbox"]) ,
