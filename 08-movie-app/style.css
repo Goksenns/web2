@@ -1,7 +1,9 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Orbitron:wght@500&family=Roboto+Slab&family=Source+Sans+Pro&family=Space+Mono:wght@400;700&display=swap');
 @import url("buttons.css");
-
+:root{
+ --blue:#3e4555;
+}
 *{
     box-sizing:border-box;
 }
@@ -155,7 +157,7 @@ body {
 
 .main-nav_item a:hover,
 .main-nav_item:hover::before {
-    color: #2e4c6d;
+    color:var(--bg-color);
 }
 
 .main-nav_item a:active,
@@ -199,12 +201,12 @@ body {
 }
 
 .icon-box h3 {
-    color: #3e4555;
+    color:var(--blue);
     font-size: 2.6rem;
 }
 
 .icon-box span {
-    color: #3e4555;
+    color: var(--blue);
 }
 
 .features_left {
@@ -233,7 +235,7 @@ body {
 .section-title{
     text-align:center;
     margin-bottom: 4rem;
-    color: #3e4555;
+    color: var(--blue);
     font-size: 3rem;
     
 }
@@ -299,7 +301,7 @@ body {
     transition: color .6s;
 }
 #backtotop i:hover{
-    color: #3e4555;
+    color: var(--blue);
 }
 .counter{
     background: linear-gradient(to bottom, #d4ada1 0% , #bf8573 100%);
@@ -344,7 +346,7 @@ body {
     width: 100%;
 }
 footer{
-    background:#3e4555;
+    background:var(--blue);
     padding: 10px;
    margin-top: 20px;
 }
