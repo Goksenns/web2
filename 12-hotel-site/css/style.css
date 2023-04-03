@@ -8,6 +8,7 @@
 
 html{
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -94,6 +95,12 @@ img{
     position: relative;
 }
 
+.main-header.blog{
+    background-image: url("https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    height: 50vh;
+}
+
+
 .main-header .content{
     display: flex;
     flex-direction: column;
@@ -101,6 +108,9 @@ img{
     justify-content: center;
     text-align: center;
     height: 100vh;
+}
+.main-header.main-header.blog .content{
+    height: 50vh;
 }
 
 .main-header::before{
@@ -216,6 +226,16 @@ img{
     font-size: 4rem;
 }
 
+/* article */
+.articles{
+    padding: 3rem 5rem;
+}
+
+.article{
+    margin-top: 1.5rem;
+    color:#fff;
+}
+
 /* footer */
 
 .footer{
@@ -257,3 +277,4 @@ img{
     }
 
 }
+
