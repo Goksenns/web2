@@ -12,7 +12,7 @@
 </head>
 <body>
 
-    <h1>Lorem, ipsum dolor.</h1>
+    <!-- <h1>Lorem, ipsum dolor.</h1>
     <h2>Lorem, ipsum dolor.</h2>
     <h3>Lorem, ipsum dolor.</h3>
     <h4>Lorem, ipsum dolor.</h4>
@@ -71,7 +71,7 @@
     <p class="fw-lighter">Lorem, ipsum.</p>
     <p class="fst-italic">Lorem, ipsum.</p>
     <p class="fst-normal">Lorem, ipsum.</p>
-    
+     -->
 
     <!-- margin - padding =>  {property}{sides}-{size}
     
@@ -100,7 +100,7 @@
         5: mt-5 => $spacer * 3
         auto: mt-auto(margin-top:auto) mx-auto(margin left ve right auto)
     -->
-    <div class="bg-primary p-3">Lorem, ipsum.</div>
+    <!-- <div class="bg-primary p-3">Lorem, ipsum.</div>
     <div class="bg-primary p-4 mt-3">Lorem, ipsum.</div>
     <div class="bg-success p-4 mt-3 mx-auto" style="width: 200px;">Lorem, ipsum.</div>
 
@@ -113,10 +113,10 @@
 
     <div class="p-3 mb-3 bg-light rounded shadow-sm"></div>
     <div class="p-3 mb-3 bg-light rounded shadow-sm"></div>
-    <div class="p-3 mb-3 bg-light rounded shadow-lg"></div>
+    <div class="p-3 mb-3 bg-light rounded shadow-lg"></div> -->
 
     <!-- list & tables -->
-    <ul class="list-unstyled">
+    <!-- <ul class="list-unstyled">
         <li>ürün 1</li>
         <li>ürün 2</li>
         <li>ürün 3</li>
@@ -180,11 +180,11 @@
                 <td>İstanbul</td>
             </tr>
         </tbody>
-    </table>
+    </table> -->
 
     <!-- navbar -->
 
-    <nav class="navbar bg-primary navbar-dark navbar-expand-sm">
+    <!-- <nav class="navbar bg-primary navbar-dark navbar-expand-sm">
         <ul class="navbar-nav">
             <li class="nav-item"> 
                 <a href="" class="nav-link">Link 1</a>
@@ -226,7 +226,48 @@
             </li>
         </ul>
     </div>
-    </nav>
+    </nav> -->
+
+    <!-- forms -->
+    <div class="container mt-5">
+
+        <form class="w-50"> 
+            <div class="mb-3 form-label" >
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control">
+            </div>
+            <div class="mb-3 form-label" >
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" class="form-control form-control-sm">
+            </div>
+            <div class="mb-3 form-label" >
+                <label for="address">Address</label>
+               <textarea name="address" id="address" class="form-control form-control-lg"></textarea>
+            </div>
+            <div class="mb-3 form-label" >
+                <label for="file">File</label>
+                <input type="file" name="file" id="file" class="form-control ">
+            </div>
+            <div class="mb-3 form-label" >
+                <label for="city">City</label>
+               <select name="city" id="city" class="form-select">
+                <option value="0">İstanbul</option>
+                <option value="1">Ankara</option>
+                <option value="2">İzmir</option>
+               </select>
+            </div>
+            <div class="form-check mb-3">
+                <input type="checkbox" name="gender" id="gender" class="form-check-input">
+                <label for="gender" class="form-check-label">Gender</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            
+        </form>
+
+
+
+    </div>
+    
 
 
 
