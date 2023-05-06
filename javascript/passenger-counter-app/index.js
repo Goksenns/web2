@@ -7,7 +7,7 @@
 
 // console.log(count)
 
-let bonusPoints = 50
+let bonusPoints= 50
 
 bonusPoints = bonusPoints + 50
 console.log(bonusPoints)
