@@ -19,4 +19,3 @@ bonusPoints = bonusPoints + 45
 console.log(bonusPoints)
 
 
-console.log(bonusPoints)
