@@ -1,8 +1,9 @@
 body{
-    background-image: url("https://images.unsplash.com/photo-1609003999383-ab122c731e6d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=760&q=80");
+    background-image: url("https://images.unsplash.com/photo-1536765020055-a6b775a271a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
     background-size: cover;
     font-weight: bold;
     text-align: center;
+    color:white;
 }
 
 h1{
@@ -30,3 +31,8 @@ button{
 #increment-btn{
     background:darkred;
 }
+
+#save-btn{
+    background:darkgreen;
+}
+
