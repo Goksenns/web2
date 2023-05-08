@@ -37,8 +37,16 @@ function save() {
 
 }
 
+let myPoints= 3
 
- 
+ function add3Points() {
+    myPoints+=3
+ }
+ function remove1Points() {
+    myPoints-=1
+ }
+
+
 
 
 
