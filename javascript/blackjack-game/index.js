@@ -79,3 +79,5 @@ function newCard() {
 // }
 
 // console.log(getHand())
+
+
