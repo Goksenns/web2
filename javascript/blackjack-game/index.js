@@ -65,5 +65,17 @@ function newCard() {
   }
 }
 
-// .push() --> add an item in an array
+// .push() --> add an item to the end of the array
 // .pop() --> remove the last item in an array
+// shift() --> remove the first item in an array
+// unshift() --> add item to the beginning of the array
+
+//ROCK PAPER SCİSSOR
+// let hands = ["rock", "paper", "scissor"]
+
+// function getHand() {
+//   let randomIndex  = Math.floor(Math.random()*3)
+//   return hands[randomIndex]
+// }
+
+// console.log(getHand())
