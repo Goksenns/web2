@@ -1,7 +1,19 @@
-let myLeads = [];
+let myLeads = '["www.awesome.com"]';
+
+myLeads = JSON.parse(myLeads)
+
+myLeads.push("www.eren.com")
+
+myLeads = JSON.stringify(myLeads)
+
+console.log(typeof myLeads)
+
+
 const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
+
+
 
 inputBtn.addEventListener("click", function () {
   myLeads.push(inputEl.value);
